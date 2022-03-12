@@ -40,6 +40,9 @@ AppModule = __decorate([
                         database: configService.get('database.name'),
                         entities: ['dist/**/*.entity{.ts,.js}'],
                         synchronize: true,
+                        ssl: {
+                            rejectUnauthorized: false,
+                        },
                     };
                 },
             }),

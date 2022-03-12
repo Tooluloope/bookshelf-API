@@ -30,6 +30,9 @@ if (process.env.NODE_ENV === 'PRODUCTION') {
           database: configService.get('database.name'),
           entities: ['dist/**/*.entity{.ts,.js}'],
           synchronize: true,
+          ssl: {
+            rejectUnauthorized: false,
+          },
         };
       },
     }),
