@@ -34,10 +34,6 @@ export class SignUpDTO {
 
   @ApiProperty()
   @IsString()
-  gender: string;
-
-  @ApiProperty()
-  @IsString()
   fullname: string;
 
   @ApiProperty({ minimum: 11 })

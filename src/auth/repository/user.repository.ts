@@ -41,7 +41,7 @@ export class UserRepository extends Repository<User> {
       where: [{ username }, { email: username }],
     });
 
-    if (user && user.validatePassword(password)) {
+    if (user && (await user.validatePassword(password))) {
       const { phoneNumber, email, fullname } = user;
       return {
         user: {
