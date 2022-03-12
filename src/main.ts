@@ -12,7 +12,7 @@ async function bootstrap() {
     .setTitle('Bookshelf APP')
     .setDescription('Bookshelf API documentation')
     .setVersion('1.0')
-    .addTag('Nimble')
+    .addTag('BookShelf')
     .build();
 
   const document = SwaggerModule.createDocument(app, options);
